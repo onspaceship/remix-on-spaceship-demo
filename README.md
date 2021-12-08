@@ -27,3 +27,19 @@ This is a demo for running a [Remix](https://remix.run/) app on [AWS EKS](https:
    ```
    eksctl create cluster -n remix-demo -r us-east-2 -t m5a.large
    ```
+
+3. Start up the base demo server in the cluster
+
+   ```
+   kubectl apply -f k8s/
+   ```
+
+4. Create the cluster entry in Spaceship and install [the Spaceship Agent](https://github.com/onspaceship/agent):
+
+   ```
+   Visit: https://onspaceship.com/teams/TEAM_HANDLE/clusters
+
+   Create a new cluster and click the "Need to set up your cluster?" link.
+
+   Copy and run the "kubectl apply" command provided.
+   ```
