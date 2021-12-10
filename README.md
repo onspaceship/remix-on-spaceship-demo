@@ -33,8 +33,7 @@ This is a demo for running a [Remix](https://remix.run/) app on [AWS EKS](https:
 2. ### Create the cluster
 
    ```
-   eksctl create cluster -n remix-demo -r us-east-2 -t m5a.large
-   # Feel free to change the node sizes or region to suit your needs
+   eksctl create cluster -n remix-demo
    ```
 
 3. ### Create the cluster entry in Spaceship and install [the Spaceship Agent](https://github.com/onspaceship/agent):
