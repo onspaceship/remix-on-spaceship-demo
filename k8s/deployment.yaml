@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: remix-demo
+  name: remix-on-spaceship-demo
   labels:
-    app: remix-demo
+    app: remix-on-spaceship-demo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: remix-demo
+      app: remix-on-spaceship-demo
   template:
     metadata:
       labels:
-        app: remix-demo
+        app: remix-on-spaceship-demo
     spec:
       containers:
-        - name: remix-demo
+        - name: remix-on-spaceship-demo
           command: ['web']
-          image: registry.onspaceship.com/spaceship/remix-demo:demo
+          image: registry.onspaceship.com/spaceship/remix-on-spaceship-demo:demo

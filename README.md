@@ -63,7 +63,7 @@ This is a demo for running a [Remix](https://remix.run/) app on [AWS EKS](https:
 6. ### Add the delivery label
 
    ```
-   ship setup-delivery remix-demo -a remix-demo -t TEAM_HANDLE
+   ship setup-delivery remix-on-spaceship-demo -a remix-on-spaceship-demo -t TEAM_HANDLE
    ```
 
 7. ### Change some code and push to GitHub
@@ -75,7 +75,7 @@ This is a demo for running a [Remix](https://remix.run/) app on [AWS EKS](https:
    Once the delivery completes on Spaceship, you can visit the running application to see your changes. You can get the temporary address to your application by running this command:
 
    ```
-   kubectl get svc remix-demo
+   kubectl get svc remix-on-spaceship-demo
    ```
 
    It will be the address ending in `*.elb.amazonaws.com`. Make sure the URL in your browser starts with `http://`
