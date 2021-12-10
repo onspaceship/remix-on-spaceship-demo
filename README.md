@@ -18,7 +18,7 @@ This is a demo for running a [Remix](https://remix.run/) app on [AWS EKS](https:
 
 ## Steps
 
-0. ### [Create a fork of this project](https://github.com/onspaceship/remix-demo/fork)
+0. ### [Create a fork of this project](https://github.com/onspaceship/remix-on-spaceship-demo/fork)
 
 1. ### Create the Remix project
 
@@ -33,7 +33,7 @@ This is a demo for running a [Remix](https://remix.run/) app on [AWS EKS](https:
 2. ### Create the cluster
 
    ```
-   eksctl create cluster -n remix-demo
+   eksctl create cluster -n remix-on-spaceship-demo
    ```
 
 3. ### Create the cluster entry in Spaceship and install [the Spaceship Agent](https://github.com/onspaceship/agent):
